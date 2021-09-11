@@ -23,6 +23,12 @@ ul li {
     font-size: 24px;
   }
 
+  main{
+    width: 500px;
+    margin: 80px auto;
+    min-height: 700px;
+}
+
   body{
     background-color: coral;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
