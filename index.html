@@ -43,6 +43,32 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </article>   
         </main>
+
+      <br>
+      <h4>Pet Name Generator</h4>
+     What is your first name: <input id="first-name">
+     What is your last name: <input id="last-name">
+     What kind of pet are you looking to adopt: <input id="type-of-pet">
+     What is your favorite color: <input id="fav-color">
+     <button id="submit">Enter</button>
+
+     <hr>
+     <div id="results"></div>
+
+     <script>
+       function generate()  {
+         var firstname = document.getElementById('first-name').value;
+         var lastname = document.getElementById('last-name').value;
+         var display = Your pet name could be + 'fav-color' + 'first-name' + 'type-of-pet';
+       }
+
+    document.getElementById('submit').addEventListener('click', generate);
+
+     </script>
+
+        <div>
+
+        </div>
         <footer>
             <p>&copy; Animal Rescue Yard</p>
         </footer>
