@@ -51,24 +51,33 @@
      What kind of pet are you looking to adopt: <input id="type-of-pet">
      What is your favorite color: <input id="fav-color">
      <button id="submit">Enter</button>
-
-     <hr>
-     <div id="results"></div>
+     
+     <div>
+      <hr>
+      <div id="results"></div>
+    </div>
 
      <script>
        function generate()  {
          var firstname = document.getElementById('first-name').value;
          var lastname = document.getElementById('last-name').value;
          var display = Your pet name could be + 'fav-color' + 'first-name' + 'type-of-pet';
+
+
+         document.getElementById('results').innerHTML = display;
        }
 
-    document.getElementById('submit').addEventListener('click', generate);
-
+    if (1 + 1 = 2) {
+      document.getElementById('submit').addEventListener('click', generate);
+    }
+    
      </script>
 
-        <div>
-
-        </div>
+    <br>
+    </br>
+    <br>
+  </br>
+  
         <footer>
             <p>&copy; Animal Rescue Yard</p>
         </footer>
