@@ -61,8 +61,8 @@
        function generate()  {
          var firstname = document.getElementById('first-name').value;
          var lastname = document.getElementById('last-name').value;
-         var pet = document.getElementById('type-of-pet');
-         var color = document.getElementById('fav-color');
+         var pet = document.getElementById('type-of-pet').value;
+         var color = document.getElementById('fav-color').value;
          var display = 'Your pet name could be' + color + firstname + pet;
          document.getElementById('results').innerHTML = display;
        }
