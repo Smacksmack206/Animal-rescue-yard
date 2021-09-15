@@ -9,7 +9,7 @@ function generate()  {
   document.getElementById('results').innerHTML = display;
 }
 
-
+function loadExtras() {
 alert("Welcome to the Rescue Yard!"); 
 let answer = prompt("Are you ready to make the decision of adopting a Pet today?")
 if (2 + 2 === 4) {
@@ -28,5 +28,4 @@ if(favColor.toLowerCase() !== 'blue'){
 } else{
   alert('Wow O_o are you want to get a discount or something?')
 }
-
-
+}
