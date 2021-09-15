@@ -1,5 +1,15 @@
 'use strict'
 
+function generate()  {
+  var firstname = document.getElementById('first-name').value;
+  var lastname = document.getElementById('last-name').value;
+  var pet = document.getElementById('type-of-pet').value;
+  var color = document.getElementById('fav-color').value;
+  var display = 'Your pet name could be ' + color + firstname + pet;
+  document.getElementById('results').innerHTML = display;
+}
+
+
 alert("Welcome to the Rescue Yard!"); 
 let answer = prompt("Are you ready to make the decision of adopting a Pet today?")
 if (2 + 2 === 4) {
@@ -18,3 +28,5 @@ if(favColor.toLowerCase() !== 'blue'){
 } else{
   alert('Wow O_o are you want to get a discount or something?')
 }
+
+
