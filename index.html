@@ -3,6 +3,7 @@
     <head>
         <title>Animal Rescue Yard</title>
         <link href="styles.css" rel="stylesheet"></a>
+        <script src="somefile.js"></script>
       </head>
     <body>
         <header>
@@ -45,7 +46,7 @@
         </main>
 
       <br>
-      <h4>Pet Name Generator</h4>
+      <h4>Bootleg Pet Name Generator</h4>
      What is your first name: <input id="first-name">
      What is your last name: <input id="last-name">
      What kind of pet are you looking to adopt: <input id="type-of-pet">
@@ -57,21 +58,21 @@
       <div id="results"></div>
     </div>
 
-     <script>
-       function generate()  {
-         var firstname = document.getElementById('first-name').value;
-         var lastname = document.getElementById('last-name').value;
-         var pet = document.getElementById('type-of-pet').value;
-         var color = document.getElementById('fav-color').value;
-         var display = 'Your pet name could be ' + color + firstname + pet;
-         document.getElementById('results').innerHTML = display;
-       }
+    <script>
+      function generate()  {
+        var firstname = document.getElementById('first-name').value;
+        var lastname = document.getElementById('last-name').value;
+        var pet = document.getElementById('type-of-pet').value;
+        var color = document.getElementById('fav-color').value;
+        var display = 'Your pet name could be ' + color + firstname + pet;
+        document.getElementById('results').innerHTML = display;
+      }
 
-    if (1 + 1 === 2) {
-      document.getElementById('submit').addEventListener('click', generate);
-    }
-    
-     </script>
+   if (1 + 1 === 2) {
+     document.getElementById('submit').addEventListener('click', generate);
+   }
+   
+    </script>
 
     <br>
     </br>
