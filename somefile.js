@@ -37,7 +37,3 @@ let images = document.querySelector('#images');
 if(howmany < 0){
   images.append("<img src= 'https://image.shutterstock.com/shutterstock/photos/1826554397/display_1500/stock-photo-young-nice-looking-couple-wants-to-adopt-beautiful-dog-at-animal-shelter-1826554397.jpg' style='width: 400px; height: 350px;' />");
 }
-for(let i = 5; i > 0; i--){
-  console.log(howmany);
-  images.append("<img src= 'https://image.shutterstock.com/shutterstock/photos/1826554397/display_1500/stock-photo-young-nice-looking-couple-wants-to-adopt-beautiful-dog-at-animal-shelter-1826554397.jpg' style='width: 400px; height: 350px;' />");
-}
