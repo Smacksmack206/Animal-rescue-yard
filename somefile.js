@@ -32,9 +32,9 @@ do{
 } while(answer != 'yes'){
   alert('I guess you are cool enough to come join');
 }
-
-
 }
+
+
 let howmany = prompt('How many animals are you looking to adopt today');
 let images = document.querySelector('#images');
 
