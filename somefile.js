@@ -9,6 +9,8 @@ function generate()  {
   document.getElementById('results').innerHTML = display;
 }
 
+
+
 function loadExtras() {
 alert("Welcome to the Rescue Yard!"); 
 let answer = prompt("Are you ready to make the decision of adopting a Pet today?")
@@ -28,4 +30,14 @@ if(favColor.toLowerCase() !== 'blue'){
 } else{
   alert('Wow O_o are you want to get a discount or something?')
 }
+}
+
+let howmany = prompt('How many animals are you looking to adopt today');
+let images = document.querySelector('#images');
+if(howmany < 0){
+  images.append("<img src= 'https://image.shutterstock.com/shutterstock/photos/1826554397/display_1500/stock-photo-young-nice-looking-couple-wants-to-adopt-beautiful-dog-at-animal-shelter-1826554397.jpg' style='width: 400px; height: 350px;' />");
+}
+for(let i = 5; i > 0; i--){
+  console.log(howmany);
+  images.append("<img src= 'https://image.shutterstock.com/shutterstock/photos/1826554397/display_1500/stock-photo-young-nice-looking-couple-wants-to-adopt-beautiful-dog-at-animal-shelter-1826554397.jpg' style='width: 400px; height: 350px;' />");
 }
