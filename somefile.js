@@ -8,27 +8,20 @@ function generate()  {
   var display = 'Your pet name could be ' + color + firstname + pet;
   document.getElementById('results').innerHTML = display;
 }
-
-
-
 function loadExtras() {
   alert("Welcome to the Rescue Yard!"); 
-  
-// let answer = 'yes'
 let answer = 'yes'
-
 do{
   answer = prompt("Are you ready to make the decision of adopting a Pet today?");
 
   if (answer.toLowerCase() == 'no'){
     alert('Wrong answer');
   } 
-} while(answer != 'yes'){
+} while(answer.toLowerCase() != 'yes'){
   alert('I guess you are cool enough to come join');
   askforimages();
 }
 }
-
 function askforimages() {
   let howmany = prompt('How many animals are you looking to adopt today');
   let images = document.querySelector('#images');
