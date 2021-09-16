@@ -20,15 +20,9 @@ let answer = 'yes'
 do{
   answer = prompt("Are you ready to make the decision of adopting a Pet today?");
 
-  if (answer == 'no'){
+  if (answer.toLowerCase() == 'no'){
     alert('Wrong answer');
-  } else if (answer.toLowerCase() == 'No'){
-    alert('wrong answer')
-  } else if (answer == 'not right now'){
-    alert('wrong answer')
-  } else if (answer == 'Not right now'){
-    alert('wrong answer')
-  }
+  } 
 } while(answer != 'yes'){
   alert('I guess you are cool enough to come join');
   askforimages();
