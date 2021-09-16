@@ -31,10 +31,17 @@ do{
   }
 } while(answer != 'yes'){
   alert('I guess you are cool enough to come join');
+  askforimages();
 }
 }
 
-
-let howmany = prompt('How many animals are you looking to adopt today');
-let images = document.querySelector('#images');
-
+function askforimages() {
+  let howmany = prompt('How many animals are you looking to adopt today');
+  let images = document.querySelector('#images');
+      if (1 + 1 === 2) {
+        document.getElementById('submit').addEventListener('click', generate);
+      }
+      for(let i = howmany; i > 0; i--){
+        document.write("<img src= 'https://image.shutterstock.com/shutterstock/photos/1826554397/display_1500/stock-photo-young-nice-looking-couple-wants-to-adopt-beautiful-dog-at-animal-shelter-1826554397.jpg' style='width: 400px; height: 350px;' />");
+      }
+    }
